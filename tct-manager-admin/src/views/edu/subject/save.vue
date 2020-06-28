@@ -62,6 +62,8 @@ export default {
           type: "success",
           message: response.message
         });
+        // 文件上传成功后跳转到列表页面
+        this.$router.push({path:'/subject/list'})
       }
     },
 
