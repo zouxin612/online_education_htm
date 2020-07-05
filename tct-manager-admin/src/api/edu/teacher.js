@@ -41,5 +41,12 @@ export default {
             method:'put',
             data:teacher
         })
+    },
+    // 查询所有讲师信息
+    findAllTeacherInfo(){
+        return request({
+            url:`${api_name}/getAll`,
+            method:'get'
+        })
     }
 }
