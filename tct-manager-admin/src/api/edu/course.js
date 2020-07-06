@@ -25,5 +25,19 @@ export default{
             method:'put',
             data:courseInfoVo
         })
+    },
+     // 查询要发布的信息
+     findCoursePublishInfoById(id){
+        return request({
+            url:`${api_name}/getCoursePublishInfo/` + id,
+            method:'get'
+        })
+    },
+    // 根据课程id发布课程信息
+    publishCourse(id) {
+        return request({
+          url: `${api_name}/publishCourseInfo/` + id,
+          method: 'put'
+        })
     }
 }

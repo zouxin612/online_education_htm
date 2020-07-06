@@ -125,8 +125,8 @@ export default {
   methods: {
     /********************************************************课时小节操作 ******************************************/
     // 取消清除数据操作
-    cancle(){
-this.helpSaveVideo();
+    cancle() {
+      this.helpSaveVideo();
     },
     saveOrUpdateVideo() {
       this.saveVideoBtnDisabled = true;
@@ -298,7 +298,7 @@ this.helpSaveVideo();
     // 点击下一步，保存还是修改
     next() {
       // 点击下一步
-      this.$router.push({ path: "/edu/course/publish/1" });
+      this.$router.push({ path: "/edu/course/publish/" + this.courseId });
     }
   }
 };
